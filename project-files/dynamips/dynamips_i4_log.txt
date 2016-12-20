@@ -1,0 +1,30 @@
+Dec 20 14:25:13.166 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:25:13.166 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54510.
+Dec 20 14:25:13.180 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:25:13.181 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:25:13.181 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:25:13.181 HYPERVISOR: exec_cmd: vm create ESW2 2 c3745 
+Dec 20 14:25:13.181 VM: VM ESW2 created.
+Dec 20 14:25:13.182 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Dec 20 14:25:13.182 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW2 
+Dec 20 14:25:13.182 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Dec 20 14:25:13.183 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Dec 20 14:25:13.183 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Dec 20 14:25:13.184 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 2 0 NM-1FE-TX 
+Dec 20 14:25:13.184 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Dec 20 14:25:13.184 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Dec 20 14:25:13.185 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:25:13.185 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Dec 20 14:25:13.186 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x612c0a28 
+Dec 20 14:25:13.186 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+Dec 20 14:25:13.187 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i2_startup-config.cfg 
+Dec 20 14:25:48.653 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Dec 20 14:25:48.654 HYPERVISOR: exec_cmd: vm slot_remove_binding ESW2 2 0 
+Dec 20 14:28:15.516 HYPERVISOR: exec_cmd: vm rename ESW2 Admin 
+Dec 20 14:28:58.897 HYPERVISOR: exec_cmd: nio create_udp udp-cfa5bb2c-9403-478e-95bc-02ada6302b03 10005 127.0.0.1 10004 
+Dec 20 14:28:58.898 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Admin 1 0 udp-cfa5bb2c-9403-478e-95bc-02ada6302b03 
+Dec 20 14:28:58.899 HYPERVISOR: exec_cmd: vm get_status Admin 
+Dec 20 14:29:02.250 HYPERVISOR: exec_cmd: nio create_udp udp-1708c7bd-0b02-40d7-8661-cbf8d1fe925a 10006 127.0.0.1 10007 
+Dec 20 14:29:02.251 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Admin 1 1 udp-1708c7bd-0b02-40d7-8661-cbf8d1fe925a 
+Dec 20 14:29:02.252 HYPERVISOR: exec_cmd: vm get_status Admin 
+Dec 20 14:44:41.545 HYPERVISOR: exec_cmd: vm extract_config Admin 

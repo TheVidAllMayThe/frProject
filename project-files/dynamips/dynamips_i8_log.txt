@@ -1,0 +1,36 @@
+Dec 20 14:26:15.396 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:26:15.396 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52742.
+Dec 20 14:26:15.411 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:26:15.411 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:26:15.411 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:26:15.412 HYPERVISOR: exec_cmd: vm create ESW5 6 c3745 
+Dec 20 14:26:15.412 VM: VM ESW5 created.
+Dec 20 14:26:15.412 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW5 5004 
+Dec 20 14:26:15.413 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW5 
+Dec 20 14:26:15.413 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Dec 20 14:26:15.414 HYPERVISOR: exec_cmd: vm slot_add_binding ESW5 1 0 NM-16ESW 
+Dec 20 14:26:15.414 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Dec 20 14:26:15.414 HYPERVISOR: exec_cmd: vm slot_add_binding ESW5 2 0 NM-1FE-TX 
+Dec 20 14:26:15.415 HYPERVISOR: exec_cmd: vm set_nvram ESW5 256 
+Dec 20 14:26:15.415 HYPERVISOR: exec_cmd: vm set_disk0 ESW5 1 
+Dec 20 14:26:15.416 HYPERVISOR: exec_cmd: vm set_ios ESW5 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:26:15.416 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Dec 20 14:26:15.417 HYPERVISOR: exec_cmd: vm set_idle_pc ESW5 0x612c0a28 
+Dec 20 14:26:15.417 HYPERVISOR: exec_cmd: vm set_ram ESW5 256 
+Dec 20 14:26:15.418 HYPERVISOR: exec_cmd: vm set_config ESW5 configs/i6_startup-config.cfg 
+Dec 20 14:26:40.431 HYPERVISOR: exec_cmd: vm get_status ESW5 
+Dec 20 14:26:40.434 HYPERVISOR: exec_cmd: vm slot_remove_binding ESW5 2 0 
+Dec 20 14:28:42.272 HYPERVISOR: exec_cmd: vm rename ESW5 Videoconf 
+Dec 20 14:30:13.681 HYPERVISOR: exec_cmd: nio create_udp udp-088e5bb9-cf01-4118-9cd4-280003093842 10016 127.0.0.1 10017 
+Dec 20 14:30:13.683 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Videoconf 1 0 udp-088e5bb9-cf01-4118-9cd4-280003093842 
+Dec 20 14:30:13.683 HYPERVISOR: exec_cmd: vm get_status Videoconf 
+Dec 20 14:30:17.264 HYPERVISOR: exec_cmd: vm get_status Videoconf 
+Dec 20 14:30:17.265 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Videoconf 1 0 
+Dec 20 14:30:17.265 HYPERVISOR: exec_cmd: nio delete udp-088e5bb9-cf01-4118-9cd4-280003093842 
+Dec 20 14:30:22.554 HYPERVISOR: exec_cmd: nio create_udp udp-18c5473b-b648-4ece-831f-b7014d61c6e6 10017 127.0.0.1 10016 
+Dec 20 14:30:22.555 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Videoconf 1 0 udp-18c5473b-b648-4ece-831f-b7014d61c6e6 
+Dec 20 14:30:22.556 HYPERVISOR: exec_cmd: vm get_status Videoconf 
+Dec 20 14:30:26.377 HYPERVISOR: exec_cmd: nio create_udp udp-c008b473-759a-4b16-9a64-c2da2f7c5c3e 10019 127.0.0.1 10018 
+Dec 20 14:30:26.378 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Videoconf 1 1 udp-c008b473-759a-4b16-9a64-c2da2f7c5c3e 
+Dec 20 14:30:26.379 HYPERVISOR: exec_cmd: vm get_status Videoconf 
+Dec 20 14:44:41.545 HYPERVISOR: exec_cmd: vm extract_config Videoconf 

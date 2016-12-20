@@ -1,0 +1,24 @@
+Dec 20 14:38:55.954 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:38:55.954 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53287.
+Dec 20 14:38:55.969 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:38:55.970 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:38:55.970 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:38:55.970 HYPERVISOR: exec_cmd: vm create R3 14 c3745 
+Dec 20 14:38:55.970 VM: VM R3 created.
+Dec 20 14:38:55.971 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5012 
+Dec 20 14:38:55.971 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Dec 20 14:38:55.971 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 20 14:38:55.972 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 20 14:38:55.972 HYPERVISOR: exec_cmd: vm set_ios R3 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:38:55.973 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 20 14:38:55.973 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x612c0a28 
+Dec 20 14:38:55.974 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Dec 20 14:38:55.975 HYPERVISOR: exec_cmd: vm set_config R3 configs/i14_startup-config.cfg 
+Dec 20 14:39:21.854 HYPERVISOR: exec_cmd: vm rename R3 ISP 
+Dec 20 14:39:29.765 HYPERVISOR: exec_cmd: nio create_udp udp-5abb7163-15db-48b6-ab3b-bf7fe9032141 10043 127.0.0.1 10042 
+Dec 20 14:39:29.767 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-5abb7163-15db-48b6-ab3b-bf7fe9032141 
+Dec 20 14:39:29.767 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 20 14:43:17.139 HYPERVISOR: exec_cmd: nio create_udp udp-7043dde3-04bb-4f9a-b005-d8e18b91d37f 10044 127.0.0.1 10045 
+Dec 20 14:43:17.145 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 1 udp-7043dde3-04bb-4f9a-b005-d8e18b91d37f 
+Dec 20 14:43:17.146 HYPERVISOR: exec_cmd: vm get_status ISP 
+Dec 20 14:44:41.546 HYPERVISOR: exec_cmd: vm extract_config ISP 

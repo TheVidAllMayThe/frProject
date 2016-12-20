@@ -1,0 +1,30 @@
+Dec 20 14:26:13.701 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:26:13.702 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49692.
+Dec 20 14:26:13.716 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:26:13.716 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:26:13.716 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:26:13.717 HYPERVISOR: exec_cmd: vm create ESW4 5 c3745 
+Dec 20 14:26:13.717 VM: VM ESW4 created.
+Dec 20 14:26:13.717 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW4 5003 
+Dec 20 14:26:13.718 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW4 
+Dec 20 14:26:13.718 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Dec 20 14:26:13.718 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 1 0 NM-16ESW 
+Dec 20 14:26:13.719 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Dec 20 14:26:13.720 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 2 0 NM-1FE-TX 
+Dec 20 14:26:13.721 HYPERVISOR: exec_cmd: vm set_nvram ESW4 256 
+Dec 20 14:26:13.722 HYPERVISOR: exec_cmd: vm set_disk0 ESW4 1 
+Dec 20 14:26:13.723 HYPERVISOR: exec_cmd: vm set_ios ESW4 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:26:13.723 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Dec 20 14:26:13.725 HYPERVISOR: exec_cmd: vm set_idle_pc ESW4 0x612c0a28 
+Dec 20 14:26:13.726 HYPERVISOR: exec_cmd: vm set_ram ESW4 256 
+Dec 20 14:26:13.727 HYPERVISOR: exec_cmd: vm set_config ESW4 configs/i5_startup-config.cfg 
+Dec 20 14:26:40.425 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Dec 20 14:26:40.433 HYPERVISOR: exec_cmd: vm slot_remove_binding ESW4 2 0 
+Dec 20 14:28:26.550 HYPERVISOR: exec_cmd: vm rename ESW4 VoIP 
+Dec 20 14:30:03.717 HYPERVISOR: exec_cmd: nio create_udp udp-da956b5b-d3fb-40d2-b673-d929351ae959 10012 127.0.0.1 10013 
+Dec 20 14:30:03.719 HYPERVISOR: exec_cmd: vm slot_add_nio_binding VoIP 1 0 udp-da956b5b-d3fb-40d2-b673-d929351ae959 
+Dec 20 14:30:03.719 HYPERVISOR: exec_cmd: vm get_status VoIP 
+Dec 20 14:30:08.562 HYPERVISOR: exec_cmd: nio create_udp udp-54b179d6-adbb-4d35-ae2b-475186572e6e 10015 127.0.0.1 10014 
+Dec 20 14:30:08.563 HYPERVISOR: exec_cmd: vm slot_add_nio_binding VoIP 1 1 udp-54b179d6-adbb-4d35-ae2b-475186572e6e 
+Dec 20 14:30:08.564 HYPERVISOR: exec_cmd: vm get_status VoIP 
+Dec 20 14:44:41.537 HYPERVISOR: exec_cmd: vm extract_config VoIP 

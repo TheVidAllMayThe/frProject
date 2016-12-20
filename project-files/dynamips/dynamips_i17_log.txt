@@ -1,0 +1,25 @@
+Dec 20 14:42:43.030 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:42:43.030 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34606.
+Dec 20 14:42:43.034 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:42:43.035 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:42:43.035 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:42:43.035 HYPERVISOR: exec_cmd: vm create ESW3 15 c3745 
+Dec 20 14:42:43.035 VM: VM ESW3 created.
+Dec 20 14:42:43.036 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5013 
+Dec 20 14:42:43.036 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW3 
+Dec 20 14:42:43.037 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:42:43.037 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
+Dec 20 14:42:43.038 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:42:43.038 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 2 0 NM-1FE-TX 
+Dec 20 14:42:43.038 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+Dec 20 14:42:43.039 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+Dec 20 14:42:43.040 HYPERVISOR: exec_cmd: vm set_ios ESW3 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:42:43.040 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:42:43.041 HYPERVISOR: exec_cmd: vm set_idle_pc ESW3 0x612c0a28 
+Dec 20 14:42:43.041 HYPERVISOR: exec_cmd: vm set_ram ESW3 256 
+Dec 20 14:42:43.042 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i15_startup-config.cfg 
+Dec 20 14:42:48.301 HYPERVISOR: exec_cmd: vm rename ESW3 Internet 
+Dec 20 14:43:17.144 HYPERVISOR: exec_cmd: nio create_udp udp-54af5514-38c8-4aa7-9259-5caf1ae5faa5 10045 127.0.0.1 10044 
+Dec 20 14:43:17.145 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Internet 1 0 udp-54af5514-38c8-4aa7-9259-5caf1ae5faa5 
+Dec 20 14:43:17.146 HYPERVISOR: exec_cmd: vm get_status Internet 
+Dec 20 14:44:41.543 HYPERVISOR: exec_cmd: vm extract_config Internet 

@@ -1,0 +1,31 @@
+Dec 20 14:26:11.329 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:26:11.329 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52195.
+Dec 20 14:26:11.345 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:26:11.346 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:26:11.346 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:26:11.346 HYPERVISOR: exec_cmd: vm create ESW3 4 c3745 
+Dec 20 14:26:11.346 VM: VM ESW3 created.
+Dec 20 14:26:11.347 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5002 
+Dec 20 14:26:11.347 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW3 
+Dec 20 14:26:11.348 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:26:11.348 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
+Dec 20 14:26:11.349 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:26:11.349 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 2 0 NM-1FE-TX 
+Dec 20 14:26:11.349 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+Dec 20 14:26:11.350 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+Dec 20 14:26:11.350 HYPERVISOR: exec_cmd: vm set_ios ESW3 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:26:11.351 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:26:11.351 HYPERVISOR: exec_cmd: vm set_idle_pc ESW3 0x612c0a28 
+Dec 20 14:26:11.352 HYPERVISOR: exec_cmd: vm set_ram ESW3 256 
+Dec 20 14:26:11.352 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i4_startup-config.cfg 
+Dec 20 14:26:40.419 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Dec 20 14:26:40.432 HYPERVISOR: exec_cmd: vm slot_remove_binding ESW3 2 0 
+Dec 20 14:28:19.826 HYPERVISOR: exec_cmd: vm rename ESW3 research 
+Dec 20 14:28:22.752 HYPERVISOR: exec_cmd: vm rename research Research 
+Dec 20 14:29:06.647 HYPERVISOR: exec_cmd: nio create_udp udp-6afd41a9-83b8-49b4-8532-a460b3f17a42 10009 127.0.0.1 10008 
+Dec 20 14:29:06.648 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Research 1 0 udp-6afd41a9-83b8-49b4-8532-a460b3f17a42 
+Dec 20 14:29:06.649 HYPERVISOR: exec_cmd: vm get_status Research 
+Dec 20 14:29:11.093 HYPERVISOR: exec_cmd: nio create_udp udp-0aeee098-e521-426d-be0b-d5d565e6096b 10010 127.0.0.1 10011 
+Dec 20 14:29:11.094 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Research 1 1 udp-0aeee098-e521-426d-be0b-d5d565e6096b 
+Dec 20 14:29:11.095 HYPERVISOR: exec_cmd: vm get_status Research 
+Dec 20 14:44:41.536 HYPERVISOR: exec_cmd: vm extract_config Research 

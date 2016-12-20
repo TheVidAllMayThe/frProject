@@ -1,0 +1,23 @@
+Dec 20 14:32:53.104 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Dec 20 14:32:53.104 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53670.
+Dec 20 14:32:53.117 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 20 14:32:53.118 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/Project/project-files/dynamips 
+Dec 20 14:32:53.118 GENERAL: working_dir=/home/david/GNS3/projects/Project/project-files/dynamips
+Dec 20 14:32:53.118 HYPERVISOR: exec_cmd: vm create R1 10 c3745 
+Dec 20 14:32:53.120 VM: VM R1 created.
+Dec 20 14:32:53.121 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+Dec 20 14:32:53.121 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Dec 20 14:32:53.122 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 20 14:32:53.122 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 20 14:32:53.123 HYPERVISOR: exec_cmd: vm set_ios R1 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Dec 20 14:32:53.123 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 20 14:32:53.124 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x612c0a28 
+Dec 20 14:32:53.124 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Dec 20 14:32:53.125 HYPERVISOR: exec_cmd: vm set_config R1 configs/i10_startup-config.cfg 
+Dec 20 14:33:09.786 HYPERVISOR: exec_cmd: nio create_udp udp-804c3fe0-913b-4ce4-90d5-730d8abe37eb 10021 127.0.0.1 10020 
+Dec 20 14:33:09.786 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-804c3fe0-913b-4ce4-90d5-730d8abe37eb 
+Dec 20 14:33:09.790 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 20 14:33:36.566 HYPERVISOR: exec_cmd: nio create_udp udp-089162dd-0012-4ca4-b762-7a5221be1f15 10023 127.0.0.1 10022 
+Dec 20 14:33:36.570 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-089162dd-0012-4ca4-b762-7a5221be1f15 
+Dec 20 14:33:36.571 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 20 14:44:41.534 HYPERVISOR: exec_cmd: vm extract_config R1 
